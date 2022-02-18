@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration</title>
+         <!--Bootstrap cdn-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&family=Raleway:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    height: 50%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-right: 400px;
+}
+
+#head1{
+    height: 100vh;
+    font-weight: 30px;
+    color: aquamarine;
+    margin-left: 50px;
+    font-size: 60px;
+}
+        </style>
+    </head>
+    <body>
+        <h1 id="head1">STUDENT REGISTRATION FORM</h1>
+        <div class="container">
+      <form method="post">
+         {{form.as_p}}
+         {%csrf_token%}
+         <input type="submit" class='btn btn-success btn-lg'name="" value="Insert Record">
+      </form>
+      </div>
+        
+    </body>
+    </html>
